@@ -10,3 +10,8 @@ get("/") do
 
   erb(:home)
 end
+
+get("/from_curr") do
+  params.fetch("from_curr")
+  erb(:from_curr)
+end
