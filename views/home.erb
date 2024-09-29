@@ -1,8 +1,7 @@
 
 <h1>Currency pairs</h1>
 <ul>
-  <% @currencies.each do |curr, _| %>
-    <% @from_curr = curr.to_s%>
-    <li><a href="/#{@from_curr}">Convert 1 <%= curr.to_s %> to...</a></li>
+  <% @currencies.each do |from_curr, _| %>
+    <li><a href=<%= "/" + "#{from_curr}"%>>Convert 1 <%= from_curr %> to...</a></li>
   <% end %>
 </ul>
